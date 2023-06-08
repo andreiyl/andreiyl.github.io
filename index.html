@@ -4,9 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Genm Software Solutions Company</title>
+    <link href="css/index.css" rel="stylesheet" type="text/css">
 </head>
-<body>
+<body background="img/background.jpg">
+    <div class="header">
+        <nav>
+            <img src="img/logo.png" class="logo">
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Our Profile</a></li>
+                <li><a href="#">Portfolio</a></li>
+                <li><a href="#">Message Us</a></li>
+            </ul>
+        </nav>
+
+        <img src="img/se2.png" class="bg-image">
+
+        <div class="content">
+            <h1 id="welcomemessage">Hi Stranger, Welcome to Website</h1>
+            <p>Ini adalah website latihan pertama.</p>
+        </div>
+    </div>
+    
+    <div class="wrapper">
+        <h2>Our Headquarters</h2>
+        <hr>
+        <div class="our-hq">
+            <div class="hq-loc">
+                <img src="img/c1.jpg" class="loc">
+                <h4 class="locstyle">Jakarta</h4>
+            </div>
+            <div class="hq-loc">
+                <img src="img/c2.jpg" class="loc">
+                <h4 class="locstyle">Bandung</h4>
+            </div>
+            <div class="hq-loc">
+                <img src="img/c3.jpg" class="loc">
+                <h4 class="locstyle">Semarang</h4>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <div class="footer-section message-us">
+                    <h2>Message Us</h2>
+                    <div class="form-container">
+                        <form id="myForm">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Nama :</label>
+                                <input type="text" id="name" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="birthdate" class="form-label">Tanggal Lahir :</label>
+                                <input type="date" id="birthdate" class="form-input" required>
+                            </div>
+                            <div class="form-group">
+                                <label class="form-label">Jenis Kelamin :</label>
+                                <div class="form-radio-group">
+                                    <input type="radio" name="gender" value="male" required>
+                                    <label>Laki-Laki</label>
+                                    <input type="radio" name="gender" value="female" required>
+                                    <label>Perempuan</label>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="message" class="form-label">Pesan :</label>
+                                <textarea id="message" class="form-input" rows="4" required></textarea>
+                            </div>
+                            <div class="form-group">
+                                <input type="submit" value="Submit" class="form-submit">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="footer-section data">
+                    <div class="submitted-data-container" id="submittedDataContainer">
+                        <p id="currentTime" class="time"></p>
+                        <ul id="submittedDataList"></ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                &copy; revou fundamental course | Created by Andreas Yulianto S.  
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
     
 </body>
 </html>
